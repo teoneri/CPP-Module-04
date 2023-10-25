@@ -6,7 +6,7 @@
 /*   By: mneri <mneri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 14:10:52 by mneri             #+#    #+#             */
-/*   Updated: 2023/10/20 15:06:10 by mneri            ###   ########.fr       */
+/*   Updated: 2023/10/24 16:38:24 by mneri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 Animal::Animal()
 {
+	std::cout << "Animal constructor called." << std::endl;
 }
 
 Animal::~Animal()
 {
+	std::cout << "Animal destructor called." << std::endl;
 }
 
 Animal::Animal(const Animal &other)
@@ -45,10 +47,12 @@ std::string  Animal::getType() const
 
 Dog::Dog()
 {
+	std::cout << "Dog constructor called." << std::endl;
 	this->type = "Dog";
 }
 Dog::~Dog()
 {
+	std::cout << "Dog destructor called." << std::endl;
 }
 
 void Dog::makeSound() const
@@ -58,10 +62,12 @@ void Dog::makeSound() const
 
 Cat::Cat()
 {
+	std::cout << "Cat constructor called." << std::endl;
 	this->type = "Cat";
 }
 Cat::~Cat()
 {
+	std::cout << "Cat destructor called." << std::endl;
 }
 
 void Cat::makeSound() const
@@ -71,10 +77,12 @@ void Cat::makeSound() const
 
 WrongCat::WrongCat()
 {
+	std::cout << "Wrong Cat constructor called." << std::endl;
 	this->type = "WrongCat";
 }
 WrongCat::~WrongCat()
 {
+	std::cout << "Wrong Cat deconstrucor called." << std::endl;
 }
 
 void WrongCat::makeSound() const
@@ -84,10 +92,12 @@ void WrongCat::makeSound() const
 
 WrongAnimal::WrongAnimal()
 {
+	std::cout << "Wrong Animal constructor called." << std::endl;
 }
 
 WrongAnimal::~WrongAnimal()
 {
+	std::cout << "Wrong Animal deconstructor called." << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &other)

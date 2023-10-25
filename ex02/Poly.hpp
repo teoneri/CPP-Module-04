@@ -6,7 +6,7 @@
 /*   By: mneri <mneri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 14:10:37 by mneri             #+#    #+#             */
-/*   Updated: 2023/10/20 16:43:57 by mneri            ###   ########.fr       */
+/*   Updated: 2023/10/24 16:42:55 by mneri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Animal
 		virtual ~Animal();
 		Animal(const Animal &other);
 		Animal &operator=(const Animal &other);
-		virtual void makeSound() const;
+		virtual void makeSound() const = 0;
 		std::string getType() const;
 };
 

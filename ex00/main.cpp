@@ -6,7 +6,7 @@
 /*   By: mneri <mneri@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 14:37:57 by mneri             #+#    #+#             */
-/*   Updated: 2023/10/20 15:08:39 by mneri            ###   ########.fr       */
+/*   Updated: 2023/10/24 16:40:40 by mneri            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,13 @@ int main()
 	std::cout << Wrong_i->getType() << " " << std::endl;
 	Wrong_i->makeSound(); //will output the cat sound!
 	WrongMeta->makeSound();
+
+	std::cout << std::endl;
+
+	delete meta;
+	delete j;
+	delete i;
+	delete WrongMeta;
+	delete Wrong_i;
 	return 0;
 }
